@@ -1,0 +1,82 @@
+[
+    {
+      "id": "1",
+      "item": "Walkman",
+      "description": "vintage, still works fine",
+      "price": "700",
+      "location": "Stockholm",
+      "contact": "0722899332",
+      "category": "gaming",
+      "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636706161/Items/chejnkcaoh5ijmzvc462.png"
+  },
+  {
+      "id": "2",
+      "item": "Rims",
+      "description": "20\" in great shape",
+      "price": "3000",
+      "location": "Stockholm",
+      "contact": "0723423233",
+      "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636704982/Items/gkqomwxhsuo1rcr2pzco.jpg",
+      "category": "parts"
+  },
+  {
+      "id": "3",
+      "item": "wirless Headphones",
+      "description": "Samsung e20, good as new",
+      "price": "1000",
+      "location": "Uppsala",
+      "contact": "072342332",
+      "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636705240/Items/un5vztmziw98awanew3n.jpg",
+      "category": "electronics"
+  },
+  {
+    "id": "4",
+    "item": "mini fridge",
+    "description": "phillips, call me for more info",
+    "price": "400",
+    "location": "Eskilstuna",
+    "contact": "0722322",
+    "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636705512/Items/pjbfwf5wrwtavty86uvb.jpg",
+    "category": "electronics"
+  },
+  {
+    "id": "5",
+    "item": "Marshall Speaker",
+    "description": "in good condition",
+    "price": "700",
+    "location": "Nykoping",
+    "contact": "07342322",
+    "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636706345/Items/gnwzazqwjralc8st5jd1.jpg",
+    "category": "electronics"
+  },
+  {
+    "id": "6",
+    "item": "Mechanical Keyboard",
+    "description": "Keychron k6, used like new",
+    "price": "900",
+    "location": "Eskilstuna",
+    "contact": "073243322",
+    "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636705860/Items/joyfs5nyicpijhefaznm.jpg",
+    "category": "electronics"
+  },
+  {
+    "id": "7",
+    "item": "ps4 controller",
+    "description": "in great condition",
+    "price": "300",
+    "location": "Stockholm",
+    "contact": "072334322",
+    "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636705974/Items/gkdiemwuixt8rmwnjnbe.jpg",
+    "category": "gaming"
+  },
+  {
+    "id": "8",
+    "item": "GTA 5",
+    "description": "works...",
+    "price": "400",
+    "location": "Umeo",
+    "contact": "07323332",
+    "imageUrl": "https://res.cloudinary.com/dz2vr4bag/image/upload/v1636706062/Items/cgz9smhohqlphdzaekdt.jpg",
+    "category": "gaming"
+  }
+  ]
