@@ -15,4 +15,14 @@
   height: 240px;
 }
 }
- 
+.file{
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: medium;
+  margin-left:250px;
+  margin-top: 40px;
+}
+.file:hover{
+  background-color: black;
+  color: white;
+}

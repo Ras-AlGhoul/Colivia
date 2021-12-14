@@ -16,6 +16,7 @@ const Form = ({ setRefresh }: { setRefresh: React.Dispatch<React.SetStateAction<
   const handleSubmit: (e: React.FormEvent<HTMLFormElement>) => Promise<void> =
     async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
+      console.log(imageUrl);
       const newItem: Product = {
         item,
         description,
@@ -48,7 +49,6 @@ const Form = ({ setRefresh }: { setRefresh: React.Dispatch<React.SetStateAction<
           <label>category:</label>
           <input placeholder='ex:Electronics' value={category} onChange={({ target: { value } }) => setCategory(value)} />
           <ImageUpload uploadImg={({ target: { value } }: any): any => setImageUrl(value)} />
-          <img src={imageUrl} className='form__img' /><br />
           <button className='form__btn' type='submit' >Add Item</button>
         </form>
       )
