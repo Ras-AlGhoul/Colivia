@@ -2,6 +2,7 @@ import React from 'react';
 import { Product } from '../utils/types';
 import Card from './Card';
 
+//not using interface
 const Products = ({ items }: { items: Product[] }) => {
     return (
         <div className='products'>
