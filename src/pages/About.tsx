@@ -5,9 +5,7 @@ const About: React.FC = () => {
     <div className='app'>
       <Nav />
       <div className='about'>
-        <p className='about__text'>This website was created on Salt HackDay under 8 Hours <br/> to test our capabilities on creating a fullstack project and 
-        <br/> to see if we can handle the stress of creating a full project <br/>
-        But by the End of the day I was able to build this fullstack  <br/>Selling app using node express for the backend and for the<br/>frontend I used react with some other libareries </p>
+        <p className='about__text'>This website was created for an interview with Colivia using typescript, react and node </p>
       </div>
 
     </div>

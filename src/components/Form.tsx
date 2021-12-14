@@ -4,14 +4,14 @@ import axios from "axios";
 import { Product } from '../utils/types';
 
 const Form = ({ setRefresh }: { setRefresh: React.Dispatch<React.SetStateAction<boolean>> }) => {
-  const [toggle, setToggle] = useState(false);
-  const [item, setItem] = useState('');
-  const [description, setDescription] = useState('');
-  const [price, setPrice] = useState('');
-  const [location, setLocation] = useState('');
-  const [contact, setContact] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
-  const [category, setCategory] = useState('');
+  const [toggle, setToggle] = useState<boolean>(false);
+  const [item, setItem] = useState<string>('');
+  const [description, setDescription] = useState<string>('');
+  const [price, setPrice] = useState<string>('');
+  const [location, setLocation] = useState<string>('');
+  const [contact, setContact] = useState<string>('');
+  const [imageUrl, setImageUrl] = useState<string>('');
+  const [category, setCategory] = useState<string>('');
 
   const handleSubmit: (e: React.FormEvent<HTMLFormElement>) => Promise<void> =
     async (e: React.FormEvent<HTMLFormElement>) => {
