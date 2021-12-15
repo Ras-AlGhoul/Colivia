@@ -15,7 +15,6 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     fetchItems()
-    console.log('sasas')
     return () => {
     }
   }, [refresh]);

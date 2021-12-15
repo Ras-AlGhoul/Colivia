@@ -16,7 +16,6 @@ const Form = ({ setRefresh }: { setRefresh: React.Dispatch<React.SetStateAction<
   const handleSubmit: (e: React.FormEvent<HTMLFormElement>) => Promise<void> =
     async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      console.log(imageUrl);
       const newItem: Product = {
         item,
         description,

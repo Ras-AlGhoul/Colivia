@@ -3,7 +3,7 @@ import axios from "axios";
 
 const ImageUpload: React.FC<any> = ({ uploadImg }) => {
   const token = process.env.REACT_APP_ACCESS_TOKEN;
-  const [imgFile, setImgFile] = useState<{}>({});
+  const [imgFile, setImgFile] = useState({});
   const imageUpload = (e: any) => {
     let imageFile = e.target.files[0];
     let imagePreset = new FormData();
@@ -34,7 +34,7 @@ const ImageUpload: React.FC<any> = ({ uploadImg }) => {
 
   return (
     <div>
-         <label htmlFor="files" className="file"> Select Image </label>
+       <label htmlFor="files" className="file"> Select Image </label>
       <input id="files" type="file" style={{ visibility: "hidden" }} onChange={imageUpload} />
     </div>
   )
