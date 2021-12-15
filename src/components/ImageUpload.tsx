@@ -4,7 +4,7 @@ import axios from "axios";
 const ImageUpload: React.FC<any> = ({ uploadImg }) => {
   const token = process.env.REACT_APP_ACCESS_TOKEN;
   const [imgFile, setImgFile] = useState({});
-  const imageUpload = (e: any) => {
+  const imageUpload = (e: any): void => {
     let imageFile = e.target.files[0];
     let imagePreset = new FormData();
     imagePreset.append("file", imageFile);
@@ -14,7 +14,6 @@ const ImageUpload: React.FC<any> = ({ uploadImg }) => {
 
   const postToCloude = async () => {
     try {
-      if (Object.keys(imgFile).length !== 0) {
         const response = await axios.post(`https://api.cloudinary.com/v1_1/${token}/image/upload`, imgFile);
         uploadImg({
           target: {
@@ -22,7 +21,7 @@ const ImageUpload: React.FC<any> = ({ uploadImg }) => {
             value: response.data.secure_url,
           },
         });
-      }
+      
     } catch (error) {
       console.log(error);
     }
