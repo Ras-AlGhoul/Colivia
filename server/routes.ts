@@ -1,6 +1,5 @@
-import { Express, Request, Response } from "express";
-import { nextId } from './errorHandling';
-import cors from 'cors';
+import { Express, NextFunction, Request, Response } from "express";
+import { idValidator, nextId, reqBodyValidator } from './errorHandling';
 const itemsData = require('./db/items.json');
 let items = itemsData;
 
@@ -30,6 +29,7 @@ export default function (app: Express) {
 
   app.post('/api/items', (req: Request, res: Response) => {
     res.setHeader('content-type', 'application/json');
+    reqBodyValidator(req);
     const newItem: Item = {
       id: nextId(items).toString(),
       item: req.body.item,
@@ -48,6 +48,7 @@ export default function (app: Express) {
   app.put('/api/items/:id', (req: Request, res: Response) => {
     res.setHeader('content-type', 'application/json');
     const { id } = req.params;
+    idValidator(id, items);
     const editedItem = {
         id: id,
         item: req.body.item,
@@ -65,9 +66,18 @@ export default function (app: Express) {
 
   app.delete('/api/items/:id', (req, res) => {
     const { id } = req.params;
+    idValidator(id, items);
     items = items.filter((item: Item) => item.id !== id);
     res.status(204);
     res.end()
+  });
+
+  app.use((err: any, req: Request, res: Response, next: NextFunction) => {
+    if (err) {
+      res.status(err.status || 500).send({ status: err.status, message: err.message });
+    } else {
+      next();
+    }
   });
   
 }
