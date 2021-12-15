@@ -22,7 +22,6 @@ const ImageUpload: React.FC<any> = ({ uploadImg }) => {
             value: response.data.secure_url,
           },
         });
-        
       }
     } catch (error) {
       console.log(error);
