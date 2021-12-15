@@ -4,7 +4,7 @@ import cors from 'cors';
 const itemsData = require('./db/items.json');
 let items = itemsData;
 
-interface Item {
+export interface Item {
   id: string,
   item: string,
   description: string,
