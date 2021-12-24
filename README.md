@@ -1,1 +1,1 @@
-this project was created for learning purposes only with typesript, ts-node, express
+Full-Stack project created for learning purposes using typesript, React, ts-node, express
